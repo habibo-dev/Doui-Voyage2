@@ -1,64 +1,289 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Doui Voyage | دوي للسفر</title>
-<meta name="description" content="دوي للسفر والخدمات السياحية والحج والعمرة — تجربة رقمية حديثة للتعرف على البرامج والتواصل مباشرة.">
-<style>
-:root{--navy:#071c2b;--navy2:#0d2b40;--gold:#d8b46b;--cream:#f8f4ec;--ink:#12202b;--muted:#66727d;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Segoe UI",Tahoma,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}
-a{text-decoration:none;color:inherit}.wrap{width:min(1160px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(7,28,43,.94);backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid rgba(216,180,107,.2)}
-.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px}.mark{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),#f3dfad);color:var(--navy);font-weight:900}.links{display:flex;gap:25px;font-size:14px;color:#dfe7ec}.links a:hover{color:var(--gold)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 21px;border-radius:999px;font-weight:800;border:1px solid transparent;cursor:pointer}.btn-gold{background:var(--gold);color:var(--navy)}.btn-outline{border-color:rgba(255,255,255,.25);color:#fff}.btn-whatsapp{background:#168b62;color:#fff}
-.hero{background:radial-gradient(circle at 15% 20%,rgba(216,180,107,.18),transparent 30%),linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:92px 0 78px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;inset:auto -10% -55% 30%;height:500px;border-radius:50%;border:1px solid rgba(216,180,107,.18)}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center;position:relative;z-index:1}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:.5px}.hero h1{font-size:clamp(38px,5vw,68px);line-height:1.12;margin:14px 0 20px;max-width:720px}.hero p{font-size:19px;color:#dce6ec;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.hero-card{border:1px solid rgba(216,180,107,.3);background:rgba(255,255,255,.07);border-radius:28px;padding:28px;box-shadow:0 25px 80px rgba(0,0,0,.25)}.hero-card .price{font-size:36px;font-weight:900;color:var(--gold)}.hero-card h3{margin:8px 0}.hero-card ul{padding:0;margin:20px 0;list-style:none}.hero-card li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.09);color:#e6edf1}
-section{padding:82px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 42px}.section-head h2{font-size:38px;margin:0 0 10px}.section-head p{color:var(--muted);margin:0}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid #e6e0d5;border-radius:24px;padding:27px;box-shadow:0 12px 35px rgba(25,35,40,.05)}.card .icon{width:48px;height:48px;border-radius:15px;background:#f1e7d0;color:#8c6b2f;display:grid;place-items:center;font-weight:900;margin-bottom:18px}.card h3{margin:0 0 8px;font-size:21px}.card p{color:var(--muted);margin:0}
-.offer{background:var(--navy);color:#fff}.offer .section-head p{color:#bfcbd2}.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.station{padding:28px;border-radius:24px;background:linear-gradient(160deg,#12354b,#0a2435);border:1px solid rgba(216,180,107,.2)}.station span{color:var(--gold);font-weight:800}.station h3{font-size:28px;margin:10px 0}
-.trust{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.quote{background:#fff;border-radius:28px;padding:35px;border:1px solid #e8e0d3}.quote p{font-size:22px;margin:0 0 18px}.mini{color:var(--muted)}
-.funnel{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{background:#fff;padding:22px 14px;text-align:center;border-radius:18px;border:1px solid #e7e1d7}.step b{display:block;color:#8c6b2f;margin-bottom:5px}
-.cta{background:linear-gradient(135deg,#f0e4c8,#fffaf1);border-top:1px solid #e5d7b9;border-bottom:1px solid #e5d7b9}.cta-box{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font-size:38px;margin:0}.cta p{color:var(--muted)}
-footer{background:#051723;color:#d7e0e5;padding:45px 0}.footer{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}.footer small{color:#93a2ad}.contact{display:flex;gap:18px;flex-wrap:wrap}.contact a{color:#fff}
-@media(max-width:850px){.links{display:none}.hero-grid,.trust{grid-template-columns:1fr}.cards,.offer-grid{grid-template-columns:1fr}.funnel{grid-template-columns:1fr 1fr}.hero{padding:65px 0}.hero h1{font-size:45px}.cta-box,.footer{flex-direction:column;align-items:flex-start}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071c2b">
+  <meta name="description" content="Doui Voyage — voyages organisés, Omra, Hajj, séjours, hôtels et services de voyage depuis l'Algérie.">
+  <meta property="og:title" content="DOUI VOYAGE — Voyagez autrement">
+  <meta property="og:description" content="Découvrez les programmes, séjours et services de Doui Voyage.">
+  <meta property="og:type" content="website">
+  <title>DOUI VOYAGE — Voyagez autrement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#061a29;--navy2:#0b2d43;--gold:#d8b46b;--cream:#f8f5ef;--ink:#10212c;--muted:#71808b;--white:#fff;--line:rgba(255,255,255,.14)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:Barlow,Arial,sans-serif;overflow-x:hidden}
+    body,button,a{font-family:Barlow,Arial,sans-serif}
+    a{text-decoration:none;color:inherit}
+    button{border:0}
+    .serif{font-family:"Instrument Serif",Georgia,serif;font-style:italic}
+    .wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+    .glass{background:rgba(255,255,255,.055);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:inset 0 1px 1px rgba(255,255,255,.12);position:relative;overflow:hidden}
+    .glass:before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(180deg,rgba(255,255,255,.42),rgba(255,255,255,.12) 22%,transparent 42%,transparent 60%,rgba(255,255,255,.12) 82%,rgba(255,255,255,.35));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+    .glass-strong{background:rgba(255,255,255,.08);backdrop-filter:blur(34px);-webkit-backdrop-filter:blur(34px);box-shadow:4px 4px 25px rgba(0,0,0,.08),inset 0 1px 1px rgba(255,255,255,.16)}
+    .glass-strong:before{opacity:.9}
+    .nav{position:fixed;z-index:50;top:16px;left:50%;transform:translateX(-50%);width:min(1160px,calc(100% - 32px));display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:25px}
+    .brand span{position:relative;z-index:1}
+    .navlinks{display:flex;align-items:center;padding:6px;border-radius:999px;gap:2px}
+    .navlinks a{color:rgba(255,255,255,.88);font-size:14px;padding:10px 14px;border-radius:999px;transition:.25s}
+    .navlinks a:hover{background:rgba(255,255,255,.1);color:#fff}
+    .nav-cta{background:#fff;color:#071c2b;padding:11px 16px;border-radius:999px;font-weight:700;font-size:14px;display:flex;align-items:center;gap:7px;transition:transform .25s}
+    .nav-cta:hover{transform:translateY(-2px)}
+    .hero{min-height:100vh;background:#000;position:relative;display:flex;align-items:center;color:#fff;isolation:isolate}
+    .hero-media{position:absolute;inset:0;z-index:-2;overflow:hidden}
+    .hero-media img{width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.06);filter:saturate(.92)}
+    .hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.1) 45%,rgba(0,0,0,.46))}
+    .hero-inner{width:min(1100px,calc(100% - 40px));margin:auto;padding:150px 0 80px;text-align:center;display:flex;flex-direction:column;align-items:center}
+    .eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700}
+    .hero-badge{display:inline-flex;align-items:center;gap:9px;padding:5px 14px 5px 5px;border-radius:999px;margin-bottom:28px}
+    .hero-badge b{background:#fff;color:#071c2b;border-radius:999px;padding:6px 10px;font-size:11px;letter-spacing:.05em}
+    .hero-badge span{font-size:13px;color:rgba(255,255,255,.92)}
+    .hero h1{font-size:clamp(4rem,8vw,7.7rem);line-height:.78;letter-spacing:-.055em;margin:0;max-width:900px}
+    .hero h1 .gold{color:#f1d99e}
+    .hero-copy{max-width:650px;font-size:17px;font-weight:300;line-height:1.45;color:rgba(255,255,255,.9);margin:30px auto 0}
+    .actions{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;margin-top:26px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:13px 20px;font-size:14px;font-weight:700;transition:transform .25s,background .25s}
+    .btn:hover{transform:translateY(-3px)}
+    .btn-primary{color:#fff;background:rgba(255,255,255,.12);backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,.2)}
+    .btn-white{background:#fff;color:#071c2b}
+    .btn-wa{background:#158f66;color:#fff}
+    .stats{display:flex;gap:14px;margin-top:42px}
+    .stat{width:210px;text-align:left;padding:18px;border-radius:20px}
+    .stat .num{font:italic 36px/1 "Instrument Serif",serif}
+    .stat small{display:block;color:rgba(255,255,255,.72);font-size:12px;margin-top:7px}
+    .hero-bottom{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:11px;color:rgba(255,255,255,.75);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+    .scroll-line{width:1px;height:42px;background:linear-gradient(#fff,transparent);animation:scrollPulse 1.8s ease-in-out infinite}
+    @keyframes scrollPulse{50%{opacity:.35;transform:scaleY(.55);transform-origin:top}}
+    section{padding:100px 0}
+    .dark{background:var(--navy);color:#fff}
+    .section-head{max-width:720px;margin:0 auto 48px}
+    .section-head.center{text-align:center}
+    .section-head h2{font:italic clamp(3rem,6vw,5.7rem)/.86 "Instrument Serif",serif;letter-spacing:-.035em;margin:12px 0 18px}
+    .section-head p{color:var(--muted);font-size:16px;line-height:1.5;margin:0}
+    .dark .section-head p{color:rgba(255,255,255,.65)}
+    .offers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .offer{border-radius:26px;min-height:470px;position:relative;overflow:hidden;background:#0d2b40}
+    .offer img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+    .offer:hover img{transform:scale(1.06)}
+    .offer:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.82))}
+    .offer-content{position:absolute;z-index:1;left:24px;right:24px;bottom:24px}
+    .pill{display:inline-flex;border-radius:999px;padding:6px 10px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(12px);font-size:11px;color:#fff}
+    .offer h3{font:italic 39px/.95 "Instrument Serif",serif;margin:12px 0 8px}
+    .offer p{margin:0;color:rgba(255,255,255,.76);font-size:14px}
+    .offer .meta{display:flex;justify-content:space-between;align-items:end;margin-top:18px;gap:10px}
+    .offer .price{font-weight:700;color:#f1d99e}
+    .arrow{width:40px;height:40px;border-radius:50%;background:#fff;color:#071c2b;display:grid;place-items:center;font-size:18px}
+    .destinations{display:grid;grid-template-columns:1.35fr .65fr;gap:18px}
+    .destination-large,.destination-stack>div{position:relative;overflow:hidden;border-radius:26px;min-height:520px}
+    .destination-stack{display:grid;grid-template-rows:1fr 1fr;gap:18px}
+    .destination-stack>div{min-height:0}
+    .destination-large img,.destination-stack img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .8s}
+    .destination-large:hover img,.destination-stack>div:hover img{transform:scale(1.05)}
+    .destination-large:after,.destination-stack>div:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.68))}
+    .dest-label{position:absolute;z-index:1;left:24px;bottom:23px;color:#fff}
+    .dest-label h3{font:italic 46px/1 "Instrument Serif",serif;margin:8px 0}
+    .dest-label p{margin:0;color:rgba(255,255,255,.75)}
+    .experience{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+    .experience h2{font:italic clamp(3rem,5.5vw,5.2rem)/.87 "Instrument Serif",serif;letter-spacing:-.04em;margin:13px 0 22px}
+    .experience-copy{color:var(--muted);font-size:17px;line-height:1.6;max-width:520px}
+    .check-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:28px 0}
+    .check{padding:14px 16px;border-radius:16px;background:#fff;border:1px solid #e8e1d6;font-size:14px}
+    .check strong{display:block;margin-bottom:3px}
+    .check span{color:var(--muted)}
+    .quote{padding:32px;border-radius:30px;color:#fff;min-height:370px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025))}
+    .quote p{font:italic 36px/.98 "Instrument Serif",serif;margin:0 0 16px}
+    .quote small{color:rgba(255,255,255,.65)}
+    .funnel{background:#f0e7d6}
+    .funnel-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+    .step{background:#fff;border:1px solid #e7dfd0;border-radius:20px;padding:22px 14px;text-align:center}
+    .step b{display:block;color:#9a7634;margin-bottom:6px}
+    .step span{font-weight:600;font-size:14px}
+    .step:after{content:"→";display:block;color:#c1a66f;margin-top:10px}
+    .step:last-child:after{content:"✓"}
+    .cta{background:var(--navy);color:#fff;padding:86px 0}
+    .cta-box{border-radius:32px;padding:46px;display:flex;align-items:center;justify-content:space-between;gap:30px;background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.02))}
+    .cta h2{font:italic clamp(3rem,6vw,5.6rem)/.82 "Instrument Serif",serif;margin:12px 0}
+    .cta p{color:rgba(255,255,255,.65);max-width:560px}
+    footer{background:#04131e;color:#d6e0e5;padding:45px 0}
+    .footer{display:flex;align-items:flex-start;justify-content:space-between;gap:30px}
+    .footer-brand{display:flex;align-items:center;gap:12px;font-weight:700}
+    .footer-mark{width:42px;height:42px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font:italic 25px "Instrument Serif",serif}
+    .footer small{display:block;color:#82939e;margin-top:12px}
+    .footer-links{display:flex;gap:22px;flex-wrap:wrap;color:#b9c5cb;font-size:14px}
+    .mobile-menu{display:none}
+    [data-reveal]{opacity:0;transform:translateY(35px);filter:blur(8px);transition:opacity .8s ease,transform .8s ease,filter .8s ease}
+    [data-reveal].visible{opacity:1;transform:none;filter:none}
+    .hero [data-hero]{opacity:0;transform:translateY(20px);filter:blur(10px);animation:heroIn .9s cubic-bezier(.2,.7,.2,1) forwards}
+    .hero [data-hero="1"]{animation-delay:.25s}.hero [data-hero="2"]{animation-delay:.45s}.hero [data-hero="3"]{animation-delay:.7s}.hero [data-hero="4"]{animation-delay:.95s}.hero [data-hero="5"]{animation-delay:1.15s}
+    @keyframes heroIn{to{opacity:1;transform:none;filter:none}}
+    @media(max-width:900px){
+      .navlinks{display:none}.mobile-menu{display:grid;width:50px;height:50px;border-radius:50%;place-items:center;color:#fff;font-size:21px}
+      .hero h1{font-size:clamp(3.6rem,14vw,6rem)}.stats{width:100%;justify-content:center}.stat{width:46%}
+      .offers,.destinations,.experience{grid-template-columns:1fr}.destination-stack{grid-template-columns:1fr 1fr;grid-template-rows:1fr;height:300px}.destination-large{min-height:440px}.funnel-grid{grid-template-columns:1fr 1fr}.cta-box{align-items:flex-start;flex-direction:column}.footer{flex-direction:column}
+    }
+    @media(max-width:560px){
+      .wrap,.hero-inner{width:min(100% - 28px,1180px)}section{padding:75px 0}.hero-inner{padding-top:135px}.hero-copy{font-size:15px}.hero-badge span{font-size:11px}
+      .stats{flex-direction:column;align-items:center}.stat{width:min(100%,300px)}.offers{gap:12px}.offer{min-height:420px}.destination-stack{grid-template-columns:1fr;height:auto}.destination-stack>div{min-height:260px}.check-list,.funnel-grid{grid-template-columns:1fr}.cta-box{padding:30px 22px}.quote{min-height:330px}.quote p{font-size:31px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero [data-hero], [data-reveal]{animation:none;transition:none;opacity:1;transform:none;filter:none}.offer img,.destination-large img,.destination-stack img{transition:none}}
+  </style>
 </head>
 <body>
-<header><div class="wrap nav">
-<a class="brand" href="#"><span class="mark">د</span><span>DOUI VOYAGE</span></a>
-<nav class="links"><a href="#programmes">البرامج</a><a href="#experience">التجربة</a><a href="#services">الخدمات</a><a href="#contact">تواصل معنا</a></nav>
-<a class="btn btn-gold" href="https://wa.me/213775207220?text=السلام%20عليكم،%20أرغب%20في%20الاستفسار%20عن%20برامج%20دوي%20للسفر" target="_blank">تواصل عبر WhatsApp</a>
-</div></header>
+  <header class="nav">
+    <a href="#" class="brand glass" aria-label="DOUI VOYAGE"><span class="serif">د</span></a>
+    <nav class="navlinks glass" aria-label="Navigation principale">
+      <a href="#offres">Offres</a><a href="#destinations">Destinations</a><a href="#experience">Pourquoi nous</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="https://wa.me/213775207220?text=Bonjour%20Doui%20Voyage%2C%20je%20souhaite%20avoir%20des%20informations." target="_blank" rel="noopener">WhatsApp ↗</a>
+    </nav>
+    <a class="mobile-menu glass" href="#contact" aria-label="Contact">↗</a>
+  </header>
 
-<main>
-<section class="hero"><div class="wrap hero-grid">
-<div><div class="eyebrow">دوي للخدمات السياحية والحج والعمرة</div><h1>رحلتك إلى بيت الله تبدأ بخطوة مطمئنة.</h1><p>تجربة رقمية حديثة تساعدك على اكتشاف البرامج، معرفة الخدمات، وطرح استفسارك مباشرة مع فريق دوي للسفر.</p><div class="actions"><a class="btn btn-gold" href="#programmes">اكتشف البرامج</a><a class="btn btn-outline" href="https://wa.me/213775207220" target="_blank">اسألنا عبر WhatsApp</a></div></div>
-<div class="hero-card"><div class="eyebrow">عرض العمرة</div><h3>رحلة واحدة... 3 محطات إيمانية</h3><div class="price">189,000 دج*</div><ul><li>مكة المكرمة • المدينة المنورة • الطائف</li><li>النقل المريح والإقامة الفندقية</li><li>وجبات مختارة ومرشدون ذوو خبرة</li><li>مرافقة ومتابعة طوال الرحلة</li></ul><small>* السعر الظاهر في المحتوى المقدم للـDemo ويجب تأكيده قبل الحجز.</small></div>
-</div></section>
+  <main>
+    <section class="hero">
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=2400&q=88" alt="Voyage et architecture à Istanbul" loading="eager">
+      </div>
+      <div class="hero-inner">
+        <div class="hero-badge glass" data-hero="1"><b>NOUVEAU</b><span>Découvrez les programmes Doui Voyage</span></div>
+        <div class="eyebrow" data-hero="2">DOUI VOYAGE · Algérie</div>
+        <h1 class="serif" data-hero="3">Voyagez <span class="gold">autrement.</span></h1>
+        <p class="hero-copy" data-hero="4">Des voyages organisés, séjours, hôtels, Omra et services de voyage pensés pour vous accompagner de la découverte jusqu'au départ.</p>
+        <div class="actions" data-hero="5">
+          <a class="btn btn-white" href="#offres">Découvrir les offres ↗</a>
+          <a class="btn btn-wa" href="https://wa.me/213775207220?text=Bonjour%20Doui%20Voyage%2C%20je%20souhaite%20d%C3%A9couvrir%20vos%20offres." target="_blank" rel="noopener">Parler sur WhatsApp</a>
+        </div>
+        <div class="stats" data-hero="5">
+          <div class="stat glass"><div class="num">Omra</div><small>Programmes & accompagnement</small></div>
+          <div class="stat glass"><div class="num">Hajj</div><small>Informations & demandes</small></div>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>Explorer</span><div class="scroll-line"></div></div>
+    </section>
 
-<section id="programmes"><div class="wrap"><div class="section-head"><div class="eyebrow">برامج مختارة</div><h2>كل ما تحتاجه في مكان واحد</h2><p>صفحات واضحة للعروض والخدمات، مع طريق مباشر من الاستكشاف إلى التواصل والحجز.</p></div>
-<div class="cards">
-<div class="card"><div class="icon">01</div><h3>العمرة</h3><p>برامج العمرة، تفاصيل الرحلة، الخدمات، المحطات، الأسئلة المتكررة والتواصل المباشر.</p></div>
-<div class="card"><div class="icon">02</div><h3>الحج</h3><p>عرض البرامج والمعلومات المهمة للحجاج بطريقة منظمة تساعد العائلة على اتخاذ الخطوة التالية.</p></div>
-<div class="card"><div class="icon">03</div><h3>السياحة</h3><p>واجهة مرنة لعرض الرحلات والوجهات والعروض السياحية مستقبلاً.</p></div>
-</div></div></section>
+    <section id="offres" class="dark">
+      <div class="wrap">
+        <div class="section-head center" data-reveal>
+          <div class="eyebrow">Sélection Doui Voyage</div>
+          <h2>Des expériences qui commencent ici.</h2>
+          <p>Une présentation claire des programmes pour passer naturellement de l'inspiration à la demande d'information.</p>
+        </div>
+        <div class="offers">
+          <article class="offer" data-reveal>
+            <img src="https://images.unsplash.com/photo-1565552645632-d725f011cb91?auto=format&fit=crop&w=1200&q=82" alt="Istanbul" loading="lazy">
+            <div class="offer-content"><span class="pill">VOYAGE ORGANISÉ</span><h3>Istanbul</h3><p>Une escapade entre culture, découvertes et moments inoubliables.</p><div class="meta"><span class="price">À partir de 149 000 DA*</span><span class="arrow">↗</span></div></div>
+          </article>
+          <article class="offer" data-reveal>
+            <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=82" alt="Dubai" loading="lazy">
+            <div class="offer-content"><span class="pill">SÉJOUR</span><h3>Dubaï</h3><p>Une destination moderne entre expérience urbaine, détente et découverte.</p><div class="meta"><span class="price">Programme sur demande*</span><span class="arrow">↗</span></div></div>
+          </article>
+          <article class="offer" data-reveal>
+            <img src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&w=1200&q=82" alt="Makkah" loading="lazy">
+            <div class="offer-content"><span class="pill">OMRA</span><h3>Makkah</h3><p>Une expérience spirituelle accompagnée avec des informations claires sur le programme.</p><div class="meta"><span class="price">Programme sur demande*</span><span class="arrow">↗</span></div></div>
+          </article>
+        </div>
+        <p style="font-size:11px;color:rgba(255,255,255,.42);margin:16px 0 0">* Contenu de démonstration — prix et disponibilités à confirmer par l'agence avant toute réservation.</p>
+      </div>
+    </section>
 
-<section class="offer"><div class="wrap"><div class="section-head"><div class="eyebrow">تجربة الرحلة</div><h2>ثلاث محطات. تجربة واحدة.</h2><p>تنظيم بصري بسيط يجعل تفاصيل البرنامج سهلة القراءة على الهاتف والكمبيوتر.</p></div><div class="offer-grid">
-<div class="station"><span>01</span><h3>مكة المكرمة</h3><p>المحطة الرئيسية للعمرة وتجربة روحانية مميزة.</p></div>
-<div class="station"><span>02</span><h3>المدينة المنورة</h3><p>زيارة المدينة ضمن برنامج الرحلة بطريقة واضحة ومنظمة.</p></div>
-<div class="station"><span>03</span><h3>الطائف</h3><p>محطة إضافية تمنح البرنامج تجربة متنوعة.</p></div>
-</div></div></section>
+    <section id="destinations">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <div class="eyebrow">Destinations</div>
+          <h2>Le monde, à votre rythme.</h2>
+          <p>Une base visuelle prête à accueillir les véritables offres, photos et départs de l'agence.</p>
+        </div>
+        <div class="destinations">
+          <div class="destination-large" data-reveal>
+            <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1800&q=85" alt="Santorini" loading="lazy">
+            <div class="dest-label"><span class="pill">MÉDITERRANÉE</span><h3>Santorini</h3><p>Escapade · découverte · séjour</p></div>
+          </div>
+          <div class="destination-stack">
+            <div data-reveal><img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=1000&q=82" alt="Dubai skyline" loading="lazy"><div class="dest-label"><h3 style="font-size:38px">Dubaï</h3><p>Modernité & évasion</p></div></div>
+            <div data-reveal><img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=1000&q=82" alt="Madinah" loading="lazy"><div class="dest-label"><h3 style="font-size:38px">Madinah</h3><p>Omra & accompagnement</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="experience"><div class="wrap trust"><div><div class="eyebrow">الثقة أولاً</div><h2>نحوّل محتوى الوكالة إلى تجربة رقمية منظمة.</h2><p class="mini">الهدف ليس استبدال Facebook أو WhatsApp، بل إنشاء نقطة رقمية رسمية تجمع المعلومات، البرامج، الصور، الأسئلة والتواصل في مكان واحد.</p><div class="actions"><a class="btn btn-whatsapp" href="https://wa.me/213775207220" target="_blank">ابدأ الاستفسار</a></div></div><div class="quote"><p>«فريق واحد... وقلب واحد ❤️ رجال جمعهم هدف واحد: خدمة ضيوف الرحمن بإخلاص ومحبة.»</p><div class="mini">من محتوى Doui Voyage المقدم للـDemo</div></div></div></section>
+    <section id="experience">
+      <div class="wrap experience">
+        <div data-reveal>
+          <div class="eyebrow">Une agence, une relation</div>
+          <h2>Plus qu'un voyage. Un accompagnement.</h2>
+          <p class="experience-copy">Doui Voyage peut transformer son contenu Facebook et ses échanges WhatsApp en une expérience digitale claire : offres, destinations, détails, demandes et contact direct dans un seul espace.</p>
+          <div class="check-list">
+            <div class="check"><strong>Programmes clairs</strong><span>Services, durée, destination et informations essentielles.</span></div>
+            <div class="check"><strong>WhatsApp direct</strong><span>Une demande pré-remplie en un clic.</span></div>
+            <div class="check"><strong>Mobile first</strong><span>Conçu pour les clients venant des réseaux sociaux.</span></div>
+            <div class="check"><strong>Évolutif</strong><span>Base prête pour offres, leads et administration.</span></div>
+          </div>
+          <a class="btn btn-wa" href="https://wa.me/213775207220?text=Bonjour%20Doui%20Voyage%2C%20je%20souhaite%20%C3%A9changer%20avec%20un%20conseiller." target="_blank" rel="noopener">Échanger avec un conseiller ↗</a>
+        </div>
+        <div class="quote glass" data-reveal>
+          <div class="eyebrow">Doui Voyage</div>
+          <p>« Une équipe réunie autour d'un objectif : servir les voyageurs avec sérieux, attention et proximité. »</p>
+          <small>Message de marque proposé pour la démo — à valider par l'agence.</small>
+        </div>
+      </div>
+    </section>
 
-<section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">منصة قابلة للتطور</div><h2>الموقع اليوم، والمنظومة غداً</h2><p>يمكن بدء المشروع بواجهة احترافية، ثم إضافة أدوات الإدارة والتتبع والأتمتة حسب احتياجات الوكالة.</p></div>
-<div class="funnel">
-<div class="step"><b>01</b>Facebook / Instagram</div><div class="step"><b>02</b>الموقع الرسمي</div><div class="step"><b>03</b>تفاصيل البرنامج</div><div class="step"><b>04</b>استفسار WhatsApp</div><div class="step"><b>05</b>متابعة العميل</div>
-</div></div></section>
+    <section class="funnel">
+      <div class="wrap">
+        <div class="section-head center" data-reveal>
+          <div class="eyebrow">Parcours client</div>
+          <h2>Du réseau social au départ.</h2>
+          <p>Le parcours commercial que la future plateforme peut rendre simple et mesurable.</p>
+        </div>
+        <div class="funnel-grid">
+          <div class="step" data-reveal><b>01</b><span>Facebook / Instagram</span></div>
+          <div class="step" data-reveal><b>02</b><span>Offre Doui Voyage</span></div>
+          <div class="step" data-reveal><b>03</b><span>Détails du programme</span></div>
+          <div class="step" data-reveal><b>04</b><span>WhatsApp / Demande</span></div>
+          <div class="step" data-reveal><b>05</b><span>Suivi client</span></div>
+        </div>
+      </div>
+    </section>
 
-<section class="cta" id="contact"><div class="wrap cta-box"><div><div class="eyebrow">DOUI VOYAGE</div><h2>جاهزون لبدء الرحلة؟</h2><p>للاستفسار عن البرامج والخدمات، تواصلوا مباشرة مع فريق دوي للسفر.</p></div><div class="actions"><a class="btn btn-gold" href="https://wa.me/213775207220" target="_blank">WhatsApp: 0775 20 72 20</a><a class="btn" style="background:var(--navy);color:#fff" href="mailto:douivoyage@gmail.com">Email</a></div></div></section>
-</main>
-<footer><div class="wrap footer"><div><div class="brand"><span class="mark">د</span><span>DOUI VOYAGE</span></div><small>دوي للخدمات السياحية والحج والعمرة</small></div><div class="contact"><a href="tel:+213775207220">0775 20 72 20</a><a href="mailto:douivoyage@gmail.com">douivoyage@gmail.com</a><a href="https://www.facebook.com/" target="_blank">Facebook</a></div></div></footer>
-</body></html>
+    <section id="contact" class="cta">
+      <div class="wrap">
+        <div class="cta-box glass" data-reveal>
+          <div>
+            <div class="eyebrow">DOUI VOYAGE</div>
+            <h2>Prêt à partir ?</h2>
+            <p>Pour les programmes, tarifs, disponibilités et demandes de réservation, contactez directement l'équipe Doui Voyage.</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-white" href="https://wa.me/213775207220?text=Bonjour%20Doui%20Voyage%2C%20je%20souhaite%20une%20information%20sur%20vos%20programmes." target="_blank" rel="noopener">WhatsApp · 0775 20 72 20</a>
+            <a class="btn btn-primary" href="mailto:douivoyage@gmail.com">douivoyage@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer">
+      <div>
+        <div class="footer-brand"><span class="footer-mark">د</span><span>DOUI VOYAGE</span></div>
+        <small>Voyages · Omra · Hajj · Séjours · Services de voyage</small>
+      </div>
+      <div class="footer-links">
+        <a href="#offres">Offres</a><a href="#destinations">Destinations</a><a href="#experience">Pourquoi nous</a><a href="tel:+213775207220">0775 20 72 20</a><a href="mailto:douivoyage@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const reveals=document.querySelectorAll("[data-reveal]");
+    const observer=new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}})
+    },{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+    reveals.forEach((el,i)=>{el.style.transitionDelay=(Math.min(i%5,4)*70)+"ms";observer.observe(el)});
+  </script>
+</body>
+</html>
